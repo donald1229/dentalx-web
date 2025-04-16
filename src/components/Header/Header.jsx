@@ -1,13 +1,18 @@
+import React from "react";
+import {
+  AccountCircle,
+  AddShoppingCart,
+  ExitToApp,
+  Person,
+} from "@mui/icons-material";
+import { Divider, IconButton, Menu, MenuItem } from "@mui/material";
 import { useEffect, useRef, useState } from "react";
-import { Avatar, IconButton, Menu, MenuItem, Divider } from "@mui/material";
-import { ExitToApp, AccountCircle } from "@mui/icons-material";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
 import imgs from "../../assets/dentalimage.webp";
 import "./Header.scss";
 
 const Header = ({ user = { name: "John Doe" }, onLogout }) => {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [cartOpen, setCartOpen] = useState(false); // Cart sidebar toggle
+  const [cartOpen, setCartOpen] = useState(false);
   const cartRef = useRef(null);
 
   const handleMenuOpen = (event) => {
@@ -48,15 +53,15 @@ const Header = ({ user = { name: "John Doe" }, onLogout }) => {
     <>
       <header className="header">
         {/* <div className="header-inner"> */}
-          <div className="logo-container">
-            <img src={imgs} alt="Logo" className="logo" />
-          </div>
-          <div className="icons">
-            <FaShoppingCart className="icon" onClick={toggleCart} />
-            <IconButton onClick={handleMenuOpen} className="user-icon">
-              <FaUser className="icon" />
-            </IconButton>
-          </div>
+        <div className="logo-container">
+          <img src={imgs} alt="Logo" className="logo" />
+        </div>
+        <div className="icons">
+          <AddShoppingCart className="icon" onClick={toggleCart} />
+          <IconButton onClick={handleMenuOpen} className="user-icon">
+            <Person className="icon" />
+          </IconButton>
+        </div>
         {/* </div> */}
       </header>
 

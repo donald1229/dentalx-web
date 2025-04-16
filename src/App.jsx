@@ -1,20 +1,14 @@
-// import Dashboard from "./pages/Dashboard";
-
-// import Register from "./pages/Register";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PublicRoute from "./routes/publicRoute";
-import PrivateRoute from "./routes/privateRoute";
 import Login from "./pages/public/login/login";
-import Home from "./pages/public/home/home"
-import MainLayout from "./mainLayout";
+import Home from "./pages/public/home/home";
+// import MainLayout from "./mainLayout";
+// import PrivateRoute from "./routes/privateRoute";
 
 function App() {
   return (
     <Router>
-      <MainLayout>
       <Routes>
-        {/* Public routes */}
         <Route
           path="/login"
           element={
@@ -42,7 +36,7 @@ function App() {
           }
         /> */}
       </Routes>
-      </MainLayout>
+      {/* </MainLayout> */}
     </Router>
   );
 }

@@ -50,9 +50,9 @@ const Home = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Header */}
-      {/* <header className="bg-black py-4 px-6 flex justify-between items-center">
+      <header className="bg-black py-4 px-6 flex justify-between items-center">
         <Header />
-      </header> */}
+      </header>
 
       {/* Hero Section */}
       <section class="hero-section">

@@ -9,9 +9,7 @@ const PrivateLayout = ({ children }) => {
         <header className="bg-black py-4 px-6">
           <Header />
         </header>
-
         <main className="flex-grow">{children} for PrivateLayout</main>
-
         <Footer />
       </div>
     </div>
