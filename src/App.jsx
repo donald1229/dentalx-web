@@ -25,18 +25,8 @@ function App() {
             </PublicRoute>
           }
         />
-
-        {/* Private routes */}
-        {/* <Route
-          path="/dashboard"
-          element={
-            <PrivateRoute>
-              <Dashboard />
-            </PrivateRoute>
-          }
-        /> */}
+        {/* Add private routes here if needed */}
       </Routes>
-      {/* </MainLayout> */}
     </Router>
   );
 }
