@@ -1,0 +1,213 @@
+.formContainer {
+    // padding: 40px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        background-image: url('../../../assets/images/Auth_Module_Pattern.svg');
+        background-size: contain;
+        display: block;
+        position: absolute;
+        background-repeat: no-repeat;
+        right: 95%;
+        top: 0;
+        bottom: 0;
+        background-position-x: right;
+    }
+    &__form {
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        &-head {
+            text-align: center;
+            margin-bottom: 24px;
+
+            p {
+                font-size: 14px;
+                line-height: 22px;
+                color: #e7d4d0;
+                margin: 16px auto 0;
+                max-width: 380px;
+            }
+        }
+
+        &-title {
+            font-size: 40px;
+            line-height: 48px;
+            margin: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+    &__fields {
+        fieldset {
+            border-color: #6a6665 !important;
+            border-radius: 12px;
+        }
+
+        input {
+            color: #fff;
+            border-radius: 12px;
+        }
+
+        input:-internal-autofill-selected {
+            background: transparent !important;
+        }
+
+        label {
+            color: #e7d4d0;
+
+            &.Mui-focused {
+                color: #e7d4d0 !important;
+            }
+        }
+    }
+
+    &__inner {
+        display: grid;
+        gap: 60px 20px;
+        grid-template-columns: 1fr 1.2fr;
+        align-items: center;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+
+        @media only screen and (max-width: 991px) {
+            grid-template-columns: 1fr;
+        }
+
+        &>* {
+            flex: 1 0 0;
+        }
+
+    }
+
+    &__options {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            background-color: #6a6665;
+            height: 1px;
+            width: 100%;
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 14px;
+        }
+
+        &-divider {
+            background-color: #09131a;
+            padding: 2px 20px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #e7d4d0;
+            position: relative;
+        }
+    }
+
+    &__socialButtons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+        @media only screen and (max-width: 600px) {
+            grid-template-columns: 1fr;   
+        }
+
+        button {
+            border-radius: 12px;
+            background: transparent;
+            padding: 10px 20px;
+            font-family: 16px;
+            line-height: 24px;
+            border: 1px solid #fff;
+            color: #fff;
+            text-transform: capitalize;
+        }
+    }
+
+    &__bottomLink {
+        text-align: center;
+        font-size: 14px;
+        line-height: 22px;
+        color: #e7d4d0;
+
+        a {
+            color: #fa7f45;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
+
+    &__formBox {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+    }
+
+    &__pageLink {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 4px;
+        a {
+            font-size: 14px;
+        line-height: 22px;
+        font-weight: 500;
+        color: #fa7f45;
+        text-decoration: none;
+        }
+    }
+    &__img {
+        background-color: #1A2D30;
+        border-radius: 100px 0 0 100px;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @media only screen and (max-width: 991px) {
+            border-radius: 50px 50px 0 0;
+        }
+        
+        img {
+            max-width: 100%;
+            min-height: 100vh;
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+            @media only screen and (max-width: 991px) {
+                min-height: 300px;
+            }
+        }
+    }
+}
+
+.button.MuiButton-root {
+    border-radius: 12px;
+    background: #0097B2;
+    padding: 10px 20px;
+    font-family: 16px;
+    line-height: 24px;
+    background: rgb(253 29 112);
+    background: linear-gradient(90deg, rgb(253 29 112) 50%, rgb(252 128 69) 100%);
+    color: #fff;
+    width: 100%;
+    font-weight: 700;
+}

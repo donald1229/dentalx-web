@@ -1,0 +1,37 @@
+/* global.scss */
+
+body {
+    background-color: #000; // black theme
+    color: #fff;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: #bbb;
+    text-decoration: none;
+  
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  input, .MuiOutlinedInput-root {
+    background: transparent;
+    border-radius: 0;
+    color: white;
+  }
+  
+  button {
+    text-transform: none;
+  }
+  
+  h2 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  
